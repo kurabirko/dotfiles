@@ -1,0 +1,6 @@
+#!/usr/bin/env zsh
+if command -v conda &> /dev/null; then
+    eval "$('/opt/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+fi
+
+conda $@
